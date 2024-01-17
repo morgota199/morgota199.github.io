@@ -4,6 +4,7 @@ on:
     branches: [main]
 env:
   BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,4 +34,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ${{env.BUILD_FOLDER}}
-          token: ${{ secrets.GITHUB_TOKEN }}
