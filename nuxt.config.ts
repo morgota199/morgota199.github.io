@@ -5,8 +5,5 @@ export default defineNuxtConfig({
     nojekyll: true,
   },
   ssr: true,
-  target: 'static',
-  app: {
-    baseURL: '/'
-  }
+  target: 'static'
 })
