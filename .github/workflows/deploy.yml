@@ -19,11 +19,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-          cache: 'yarn'
+          cache: 'npm'
 
       - run: |
-          yarn install
-          yarn generate
+          npm install
+          npm generate
           touch ./.output/.nojekyll
 
       - name: Deploy
