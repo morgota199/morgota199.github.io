@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as c,a as o}from"./entry._oGcusje.js";const n={},s=o("h1",null,"Contact me",-1),a=[s];function _(r,l){return c(),t("section",null,a)}const f=e(n,[["render",_]]);export{f as default};

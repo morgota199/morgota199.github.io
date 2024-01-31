@@ -1,0 +1,1 @@
+import{_ as o,c as e,o as t,a as c}from"./entry.xO8dtnC4.js";const s={},n=c("h1",null,"Portfolio",-1),r=[n];function _(a,l){return t(),e("section",null,r)}const i=o(s,[["render",_]]);export{i as default};
