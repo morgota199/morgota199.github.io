@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as c,a as n}from"./entry.MUbg-r6p.js";const s={},t=n("h1",null,"Vladimir Lysenko",-1),a=[t];function r(_,d){return c(),o("div",null,a)}const l=e(s,[["render",r]]);export{l as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,a as c}from"./entry.MUbg-r6p.js";const s={},n=c("h1",null,"About",-1),a=[n];function _(r,l){return t(),o("section",null,a)}const d=e(s,[["render",_]]);export{d as default};
