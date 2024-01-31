@@ -1,1 +1,0 @@
-import{_ as e,c as o,o as c,a as n}from"./entry.enxSCIgO.js";const s={},t=n("h1",null,"Vladimir Lysenko",-1),a=[t];function r(_,d){return c(),o("div",null,a)}const l=e(s,[["render",r]]);export{l as default};
