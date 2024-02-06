@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as c,a as s}from"./entry.FZytt5Nj.js";const t={},n=s("h1",null,"Tecnologies",-1),_=[n];function a(r,l){return c(),o("section",null,_)}const d=e(t,[["render",a]]);export{d as default};
