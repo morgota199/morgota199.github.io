@@ -33,6 +33,10 @@ const {
     justify-content: space-between;
     align-items: center;
 
+    .logo {
+        cursor: pointer;
+    }
+
     @media (min-width: $mobile-min) and (max-width: $mobile-max) {
         & {
             padding-left: 15px;

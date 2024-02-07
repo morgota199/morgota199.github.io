@@ -6,21 +6,20 @@ const nuxtApp = useNuxtApp()
 const loadingStore = useLoaderStore()
 
 nuxtApp.hook('app:mounted', async () => {
-    console.log(1)
     await loadingStore.setLoading(true)
 })
 
 nuxtApp.hook('page:finish', async () => {
-    console.log(2)
     await loadingStore.setLoading(false)
-    console.log(3)
 })
 </script>
 
 <template>
+    <TheBackground />
     <div v-if="loadingStore.isLoading" class="loader">
         <div class="blob"></div>
     </div>
+
     <div class="h-screen" :class="{ loading: loadingStore.isLoading }">
         <NuxtLayout>
             <NuxtPage />
@@ -40,16 +39,17 @@ nuxtApp.hook('page:finish', async () => {
     align-items: center;
     justify-content: center;
     cursor: progress;
+}
 
-    /* HTML: <div class="loader"></div> */
+.h-screen {
+    height: 100vh;
 }
 
 .loading {
+    background: #ffffff;
     filter: blur(4px);
 }
 
-/* HTML: <div class="loader"></div> */
-/* HTML: <div class="loader"></div> */
 .blob {
     width: 50px;
     aspect-ratio: 1;
@@ -76,6 +76,7 @@ nuxtApp.hook('page:finish', async () => {
     );
     border-radius: 50%;
 }
+
 @keyframes l18 {
     100% {
         transform: rotate(0.5turn);

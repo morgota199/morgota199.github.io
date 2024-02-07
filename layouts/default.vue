@@ -7,10 +7,8 @@ localeStore.setupLocale()
 </script>
 
 <template>
-    <div>
-        <TheHeader />
-        <slot />
-    </div>
+    <TheHeader />
+    <slot />
 </template>
 
 <style scoped lang="scss"></style>
