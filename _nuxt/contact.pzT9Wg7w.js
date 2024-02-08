@@ -1,1 +1,0 @@
-import{u as e}from"./navigation-menu.anSbAGwN.js";import{d as o,c as a,a as n,t as s,o as c}from"./entry.GAhFea3P.js";const i={id:"contact"},u=o({__name:"contact",setup(r){return e().toggle(!1),(t,p)=>(c(),a("section",i,[n("h1",null,s(t.$t("contact.title")),1)]))}});export{u as default};

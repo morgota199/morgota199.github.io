@@ -1,1 +1,0 @@
-import{J as s}from"./entry.GAhFea3P.js";const i=s("navigation-menu",{state(){return{show:!1}},getters:{isVisible(){return this.show}},actions:{toggle(e){typeof e<"u"?this.show=e:this.show=!this.show}}});export{i as u};
