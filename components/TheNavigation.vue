@@ -4,7 +4,10 @@ import { useNavigationMenu } from '~/stores/navigation-menu'
 
 const navigationStore = useNavigationMenu()
 
-const toPage = (page: string) => navigateTo(page, { replace: true })
+const toPage = (page: string) => {
+    navigateTo(page, { replace: true })
+    navigationStore.toggle(false)
+}
 </script>
 
 <template>
