@@ -1,0 +1,1 @@
+import{u as e}from"./navigation-menu.I4-LfLyW.js";import{d as o,c as a,a as n,t as s,o as i}from"./entry.j30Ejj4e.js";const r={id:"about"},m=o({__name:"about",setup(c){return e().toggle(!1),(t,l)=>(i(),a("section",r,[n("h1",null,s(t.$t("about.title")),1)]))}});export{m as default};
