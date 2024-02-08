@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as c,t as o,o as r}from"./entry.SysZT92N.js";const a={},n={id:"services"};function i(e,_){return r(),t("section",n,[c("h1",null,o(e.$t("services.title")),1)])}const d=s(a,[["render",i]]);export{d as default};
