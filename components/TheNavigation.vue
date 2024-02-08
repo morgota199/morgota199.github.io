@@ -1,36 +1,33 @@
 <script setup lang="ts">
 import BurgerIcon from '~/assets/icons/burger.svg'
+import { useNavigationMenu } from '~/stores/navigation-menu'
 
-const menuVisible = ref(false)
-
-const toggleMenu = () => {
-    menuVisible.value = !menuVisible.value
-}
+const navigationStore = useNavigationMenu()
 </script>
 
 <template>
     <nav class="navigation">
         <Transition>
-            <ul class="nav" v-if="menuVisible">
-                <li @click="toggleMenu">
+            <ul class="nav" v-if="navigationStore.isVisible">
+                <li @click="navigationStore.toggle()">
                     <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
                 </li>
-                <li @click="toggleMenu">
+                <li @click="navigationStore.toggle()">
                     <NuxtLink to="services">{{
                         $t('navigation.services')
                     }}</NuxtLink>
                 </li>
-                <li @click="toggleMenu">
+                <li @click="navigationStore.toggle()">
                     <NuxtLink to="technologies">{{
                         $t('navigation.technologies')
                     }}</NuxtLink>
                 </li>
-                <li @click="toggleMenu">
+                <li @click="navigationStore.toggle()">
                     <NuxtLink to="portfolio">{{
                         $t('navigation.portfolio')
                     }}</NuxtLink>
                 </li>
-                <li @click="toggleMenu">
+                <li @click="navigationStore.toggle()">
                     <NuxtLink to="contact">{{
                         $t('navigation.contact')
                     }}</NuxtLink>
@@ -65,7 +62,7 @@ const toggleMenu = () => {
         </ul>
 
         <div class="burger-container">
-            <BurgerIcon class="burger" @click="toggleMenu" />
+            <BurgerIcon class="burger" @click="navigationStore.toggle()" />
         </div>
     </nav>
 </template>
@@ -127,7 +124,6 @@ const toggleMenu = () => {
 
     .nav {
         list-style: none;
-        display: flex;
 
         li {
             margin: 0 10px;
@@ -161,7 +157,6 @@ const toggleMenu = () => {
             left: 0%;
             top: 15%;
             height: 100vh;
-            background: white;
             width: 100%;
 
             li {

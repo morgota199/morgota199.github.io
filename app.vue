@@ -16,9 +16,11 @@ nuxtApp.hook('page:finish', async () => {
 
 <template>
     <TheBackground />
-    <div v-if="loadingStore.isLoading" class="loader">
-        <div class="blob"></div>
-    </div>
+    <Transition mode="out-in">
+        <div v-if="loadingStore.isLoading" class="loader">
+            <div class="blob"></div>
+        </div>
+    </Transition>
 
     <div class="h-screen" :class="{ loading: loadingStore.isLoading }">
         <NuxtLayout>
