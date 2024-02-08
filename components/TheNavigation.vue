@@ -14,17 +14,17 @@ const toPage = (page: string) => {
     <nav class="navigation">
         <Transition>
             <ul class="mobile-nav" v-if="navigationStore.isVisible">
-                <li @click="toPage('about')">{{ $t('navigation.about') }}</li>
-                <li @click="toPage('services')">
+                <li @click="toPage('/about')">{{ $t('navigation.about') }}</li>
+                <li @click="toPage('/services')">
                     {{ $t('navigation.services') }}
                 </li>
-                <li @click="toPage('technologies')">
+                <li @click="toPage('/technologies')">
                     {{ $t('navigation.technologies') }}
                 </li>
-                <li @click="toPage('portfolio')">
+                <li @click="toPage('/portfolio')">
                     {{ $t('navigation.portfolio') }}
                 </li>
-                <li @click="toPage('contact')">
+                <li @click="toPage('/contact')">
                     {{ $t('navigation.contact') }}
                 </li>
 
@@ -33,15 +33,17 @@ const toPage = (page: string) => {
         </Transition>
 
         <ul class="desktop-nav">
-            <li @click="toPage('about')">{{ $t('navigation.about') }}</li>
-            <li @click="toPage('services')">{{ $t('navigation.services') }}</li>
-            <li @click="toPage('technologies')">
+            <li @click="toPage('/about')">{{ $t('navigation.about') }}</li>
+            <li @click="toPage('/services')">
+                {{ $t('navigation.services') }}
+            </li>
+            <li @click="toPage('/technologies')">
                 {{ $t('navigation.technologies') }}
             </li>
-            <li @click="toPage('portfolio')">
+            <li @click="toPage('/portfolio')">
                 {{ $t('navigation.portfolio') }}
             </li>
-            <li @click="toPage('contact')">{{ $t('navigation.contact') }}</li>
+            <li @click="toPage('/contact')">{{ $t('navigation.contact') }}</li>
         </ul>
 
         <div class="burger-container">
