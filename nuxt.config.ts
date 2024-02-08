@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     css: ['~/assets/scss/main.scss'],
     modules: ['@nuxtjs/i18n', '@pinia/nuxt', 'nuxt-svgo', 'nuxt-particles'],
     i18n: {
-        dynamicRouteParams: false,
+        vueI18n: './i18n.config.ts',
     },
     vite: {
         css: {

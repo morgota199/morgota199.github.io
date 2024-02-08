@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { useLocaleStore } from '~/stores/locale'
 import { useLoaderStore } from '~/stores/loader'
+import type { Locale } from '@intlify/core-base'
 
 const { currentLocale, setLocate } = useLocaleStore()
 const loadingStore = useLoaderStore()
 
-const selectOption = async (lang: 'en' | 'uk') => {
+const selectOption = async (lang: Locale) => {
     setLocate(lang)
     window.location.reload()
     await loadingStore.setLoading(false)
@@ -20,8 +21,8 @@ const selectOption = async (lang: 'en' | 'uk') => {
             class="fi fi-us us flag"
         ></span>
         <span
-            v-if="currentLocale !== 'uk'"
-            @click="() => selectOption('uk')"
+            v-if="currentLocale !== 'ua'"
+            @click="() => selectOption('ua')"
             class="fi fi-ua ua flag"
         ></span>
     </div>

@@ -1,25 +1,8 @@
-<script setup lang="ts">
-import { useLocaleStore } from '~/stores/locale'
-
-const {
-    translate: { t },
-} = useLocaleStore()
-</script>
-
-<i18n>
-{
-  "uk": {
-    "index_title": "Головна"
-  },
-  "en": {
-    "index_title": "Home"
-  }
-}
-</i18n>
+<script setup lang="ts"></script>
 
 <template>
     <section id="index">
-        <h1>{{ t('index_title') }}</h1>
+        <h1>{{ $t('index.title') }}</h1>
     </section>
 </template>
 

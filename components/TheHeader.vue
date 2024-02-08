@@ -1,26 +1,9 @@
-<script setup lang="ts">
-import { useLocaleStore } from '~/stores/locale'
-
-const {
-    translate: { t },
-} = useLocaleStore()
-</script>
-
-<i18n>
-{
-  "uk": {
-    "title": "Володимир Лисенко"
-  },
-  "en": {
-    "title": "Volodymyr Lysenko"
-  }
-}
-</i18n>
+<script setup lang="ts"></script>
 
 <template>
     <header class="header">
         <div class="logo">
-            <h1 @click="() => navigateTo('/')">{{ t('title') }}</h1>
+            <h1 @click="() => navigateTo('/')">{{ $t('title') }}</h1>
         </div>
         <TheNavigation />
         <TheLanguageSelector class="language-selector" />

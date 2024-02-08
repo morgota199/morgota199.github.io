@@ -1,58 +1,39 @@
 <script setup lang="ts">
-import { useLocaleStore } from '~/stores/locale'
 import BurgerIcon from '~/assets/icons/burger.svg'
-
-const {
-    translate: { t },
-} = useLocaleStore()
 
 const menuVisible = ref(false)
 
 const toggleMenu = () => {
-    console.log('ckick')
     menuVisible.value = !menuVisible.value
 }
 </script>
-
-<i18n>
-{
-  "uk": {
-    "about": "Про мене",
-    "services": "Послуги",
-    "technologies": "Технології",
-    "portfolio": "Портфоліо",
-    "contact": "Зв'язатись"
-  },
-  "en": {
-    "about": "About me",
-    "services": "Services",
-    "technologies": "Technologies",
-    "portfolio": "Portfolio",
-    "contact": "Contact me"
-  }
-}
-</i18n>
 
 <template>
     <nav class="navigation">
         <Transition>
             <ul class="nav" v-if="menuVisible">
                 <li @click="toggleMenu">
-                    <NuxtLink to="about">{{ t('about') }}</NuxtLink>
+                    <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
                 </li>
                 <li @click="toggleMenu">
-                    <NuxtLink to="services">{{ t('services') }}</NuxtLink>
-                </li>
-                <li @click="toggleMenu">
-                    <NuxtLink to="technologies">{{
-                        t('technologies')
+                    <NuxtLink to="services">{{
+                        $t('navigation.services')
                     }}</NuxtLink>
                 </li>
                 <li @click="toggleMenu">
-                    <NuxtLink to="portfolio">{{ t('portfolio') }}</NuxtLink>
+                    <NuxtLink to="technologies">{{
+                        $t('navigation.technologies')
+                    }}</NuxtLink>
                 </li>
                 <li @click="toggleMenu">
-                    <NuxtLink to="contact">{{ t('contact') }}</NuxtLink>
+                    <NuxtLink to="portfolio">{{
+                        $t('navigation.portfolio')
+                    }}</NuxtLink>
+                </li>
+                <li @click="toggleMenu">
+                    <NuxtLink to="contact">{{
+                        $t('navigation.contact')
+                    }}</NuxtLink>
                 </li>
 
                 <li class="language-selector"><TheLanguageSelector /></li>
@@ -61,19 +42,25 @@ const toggleMenu = () => {
 
         <ul class="desktop-nav">
             <li>
-                <NuxtLink to="about">{{ t('about') }}</NuxtLink>
+                <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="services">{{ t('services') }}</NuxtLink>
+                <NuxtLink to="services">{{
+                    $t('navigation.services')
+                }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="technologies">{{ t('technologies') }}</NuxtLink>
+                <NuxtLink to="technologies">{{
+                    $t('navigation.technologies')
+                }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="portfolio">{{ t('portfolio') }}</NuxtLink>
+                <NuxtLink to="portfolio">{{
+                    $t('navigation.portfolio')
+                }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="contact">{{ t('contact') }}</NuxtLink>
+                <NuxtLink to="contact">{{ $t('navigation.contact') }}</NuxtLink>
             </li>
         </ul>
 

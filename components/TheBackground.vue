@@ -27,10 +27,10 @@ const options = {
                 size: 40,
             },
             push: {
-                quantity: 4,
+                quantity: 6,
             },
             repulse: {
-                distance: 200,
+                distance: 100,
                 duration: 0.4,
             },
         },

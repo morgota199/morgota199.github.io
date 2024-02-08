@@ -1,0 +1,28 @@
+{
+    "title": "Володимир Лисенко",
+    "navigation": {
+        "about": "Про мене",
+        "services": "Послуги",
+        "technologies": "Технології",
+        "portfolio": "Портфоліо",
+        "contact": "Зв'язатись"
+    },
+    "index": {
+        "title": "Головна"
+    },
+    "about": {
+        "title": "Про мене"
+    },
+    "contact": {
+        "title": "Зв'язок"
+    },
+    "portfolio": {
+        "title": "Портфоліо"
+    },
+    "services": {
+        "title": "Послуги"
+    },
+    "technologies": {
+        "title": "Технології"
+    }
+}

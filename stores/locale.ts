@@ -1,7 +1,12 @@
-export const useLocaleStore = defineStore('locate', {
-    state() {
+export enum Locale {
+    EN = 'en',
+    UA = 'ua',
+}
+
+export const useLocaleStore = defineStore('locale', {
+    state(): { locale: Locale } {
         return {
-            locale: 'en',
+            locale: Locale.EN,
         }
     },
 
@@ -30,22 +35,22 @@ export const useLocaleStore = defineStore('locate', {
     actions: {
         setupLocale() {
             if (localStorage) {
-                const locale = localStorage.getItem('locale')
+                const locale = localStorage.getItem('locale') as Locale
 
-                this.locale = locale || 'en'
+                this.locale = locale || Locale.EN
 
                 localStorage.setItem('locale', this.locale)
             } else {
-                this.locale = 'en'
+                this.locale = Locale.EN
             }
         },
 
-        setLocate(locale?: 'uk' | 'en') {
+        setLocate(locale?: Locale) {
             if (locale) {
                 this.locale = locale
             } else {
-                if (this.locale === 'uk') this.locale = 'en'
-                if (this.locale === 'en') this.locale = 'uk'
+                if (this.locale === Locale.UA) this.locale = Locale.EN
+                if (this.locale === Locale.EN) this.locale = Locale.UA
             }
 
             if (localStorage) {

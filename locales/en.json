@@ -1,0 +1,28 @@
+{
+    "title": "Volodymyr Lysenko",
+    "navigation": {
+        "about": "About me",
+        "services": "Services",
+        "technologies": "Technologies",
+        "portfolio": "Portfolio",
+        "contact": "Contact me"
+    },
+    "index": {
+        "title": "Home"
+    },
+    "about": {
+        "title": "About me"
+    },
+    "contact": {
+        "title": "Contact me"
+    },
+    "portfolio": {
+        "title": "Portfolio"
+    },
+    "services": {
+        "title": "Services"
+    },
+    "technologies": {
+        "title": "Tecnologies"
+    }
+}
