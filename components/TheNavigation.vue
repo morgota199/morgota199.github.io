@@ -185,7 +185,6 @@ const navigationStore = useNavigationMenu()
             left: 0%;
             top: 10%;
             height: 100vh;
-            background: white;
             width: 100%;
 
             li {
