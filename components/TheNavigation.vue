@@ -8,7 +8,7 @@ const navigationStore = useNavigationMenu()
 <template>
     <nav class="navigation">
         <Transition>
-            <ul class="nav" v-if="navigationStore.isVisible">
+            <ul class="mobile-nav" v-if="navigationStore.isVisible">
                 <li @click="navigationStore.toggle()">
                     <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
                 </li>
@@ -104,7 +104,7 @@ const navigationStore = useNavigationMenu()
                     left: 0;
                     right: 0;
                     margin: auto;
-                    width: 0%;
+                    width: 0;
                     content: '.';
                     color: transparent;
                     background: #aaa;
@@ -122,7 +122,7 @@ const navigationStore = useNavigationMenu()
         }
     }
 
-    .nav {
+    .mobile-nav {
         list-style: none;
 
         li {
@@ -151,10 +151,10 @@ const navigationStore = useNavigationMenu()
             display: none;
         }
 
-        .nav {
+        .mobile-nav {
             flex-direction: column;
             position: absolute;
-            left: 0%;
+            left: 0;
             top: 15%;
             height: 100vh;
             width: 100%;
@@ -179,10 +179,10 @@ const navigationStore = useNavigationMenu()
             display: none;
         }
 
-        .nav {
+        .mobile-nav {
             flex-direction: column;
             position: absolute;
-            left: 0%;
+            left: 0;
             top: 10%;
             height: 100vh;
             width: 100%;
