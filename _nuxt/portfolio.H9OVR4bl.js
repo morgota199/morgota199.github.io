@@ -1,0 +1,1 @@
+import{_ as t,c as e,a as r,t as s,o as c}from"./entry.BXAfF7I1.js";const a={},n={id:"portfolio"};function i(o,l){return c(),e("section",n,[r("h1",null,s(o.$t("portfolio.title")),1)])}const f=t(a,[["render",i]]);export{f as default};

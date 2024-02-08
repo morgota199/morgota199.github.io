@@ -1,0 +1,1 @@
+import{_ as t,c as n,a as o,t as s,o as c}from"./entry.BXAfF7I1.js";const a={},r={id:"index"};function i(e,_){return c(),n("section",r,[o("h1",null,s(e.$t("index.title")),1)])}const l=t(a,[["render",i]]);export{l as default};

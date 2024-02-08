@@ -1,0 +1,1 @@
+import{_ as t,c as o,a as s,t as c,o as n}from"./entry.BXAfF7I1.js";const a={},r={id:"technologies"};function i(e,l){return n(),o("section",r,[s("h1",null,c(e.$t("technologies.title")),1)])}const d=t(a,[["render",i]]);export{d as default};
