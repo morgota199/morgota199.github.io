@@ -3,36 +3,26 @@ import BurgerIcon from '~/assets/icons/burger.svg'
 import { useNavigationMenu } from '~/stores/navigation-menu'
 
 const navigationStore = useNavigationMenu()
+
+const toPage = (page: string) => navigateTo(page, { replace: true })
 </script>
 
 <template>
     <nav class="navigation">
         <Transition>
             <ul class="mobile-nav" v-if="navigationStore.isVisible">
-                <li>
-                    <NuxtLink to="about" replace>{{
-                        $t('navigation.about')
-                    }}</NuxtLink>
+                <li @click="toPage('about')">{{ $t('navigation.about') }}</li>
+                <li @click="toPage('services')">
+                    {{ $t('navigation.services') }}
                 </li>
-                <li>
-                    <NuxtLink to="services" replace>{{
-                        $t('navigation.services')
-                    }}</NuxtLink>
+                <li @click="toPage('technologies')">
+                    {{ $t('navigation.technologies') }}
                 </li>
-                <li>
-                    <NuxtLink to="technologies" replace>{{
-                        $t('navigation.technologies')
-                    }}</NuxtLink>
+                <li @click="toPage('portfolio')">
+                    {{ $t('navigation.portfolio') }}
                 </li>
-                <li>
-                    <NuxtLink to="portfolio" replace>{{
-                        $t('navigation.portfolio')
-                    }}</NuxtLink>
-                </li>
-                <li>
-                    <NuxtLink to="contact" replace>{{
-                        $t('navigation.contact')
-                    }}</NuxtLink>
+                <li @click="toPage('contact')">
+                    {{ $t('navigation.contact') }}
                 </li>
 
                 <li class="language-selector"><TheLanguageSelector /></li>
@@ -40,31 +30,15 @@ const navigationStore = useNavigationMenu()
         </Transition>
 
         <ul class="desktop-nav">
-            <li>
-                <NuxtLink to="about" replace>{{
-                    $t('navigation.about')
-                }}</NuxtLink>
+            <li @click="toPage('about')">{{ $t('navigation.about') }}</li>
+            <li @click="toPage('services')">{{ $t('navigation.services') }}</li>
+            <li @click="toPage('technologies')">
+                {{ $t('navigation.technologies') }}
             </li>
-            <li>
-                <NuxtLink to="services" replace>{{
-                    $t('navigation.services')
-                }}</NuxtLink>
+            <li @click="toPage('portfolio')">
+                {{ $t('navigation.portfolio') }}
             </li>
-            <li>
-                <NuxtLink to="technologies" replace>{{
-                    $t('navigation.technologies')
-                }}</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="portfolio" replace>{{
-                    $t('navigation.portfolio')
-                }}</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="contact" replace>{{
-                    $t('navigation.contact')
-                }}</NuxtLink>
-            </li>
+            <li @click="toPage('contact')">{{ $t('navigation.contact') }}</li>
         </ul>
 
         <div class="burger-container">
@@ -93,37 +67,35 @@ const navigationStore = useNavigationMenu()
 
         li {
             margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            position: relative;
+            cursor: pointer;
 
-            a {
-                text-decoration: none;
-                color: black;
-                position: relative;
+            &:after,
+            &:before {
+                transition: all 0.5s;
+            }
 
-                &:after,
-                &:before {
-                    transition: all 0.5s;
-                }
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0;
+                content: '.';
+                color: transparent;
+                background: #aaa;
+                height: 1px;
+            }
 
-                &:after {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    width: 0;
-                    content: '.';
-                    color: transparent;
-                    background: #aaa;
-                    height: 1px;
-                }
+            &:hover {
+                color: #555;
+            }
 
-                &:hover {
-                    color: #555;
-                }
-
-                &:hover:after {
-                    width: 100%;
-                }
+            &:hover:after {
+                width: 100%;
             }
         }
     }
@@ -134,11 +106,8 @@ const navigationStore = useNavigationMenu()
 
         li {
             margin: 0 10px;
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
+            text-decoration: none;
+            color: black;
         }
 
         .language-selector {
@@ -169,10 +138,7 @@ const navigationStore = useNavigationMenu()
             li {
                 margin-top: 10px;
                 margin-bottom: 15px;
-
-                a {
-                    font-size: 24px;
-                }
+                font-size: 24px;
             }
 
             .language-selector {
@@ -197,10 +163,7 @@ const navigationStore = useNavigationMenu()
             li {
                 margin-top: 10px;
                 margin-bottom: 15px;
-
-                a {
-                    font-size: 24px;
-                }
+                font-size: 24px;
             }
 
             .language-selector {
@@ -214,9 +177,7 @@ const navigationStore = useNavigationMenu()
             display: flex;
 
             li {
-                a {
-                    font-size: 11px;
-                }
+                font-size: 11px;
             }
         }
 
@@ -240,9 +201,7 @@ const navigationStore = useNavigationMenu()
             display: flex;
 
             li {
-                a {
-                    font-size: 20px;
-                }
+                font-size: 20px;
             }
         }
 

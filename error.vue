@@ -10,11 +10,6 @@ definePageMeta({
     layout: 'default',
 })
 
-const {
-    translate: { t },
-} = useLocaleStore()
-const loadingStore = useLoaderStore()
-
 const handleError = async () => {
     await clearError({ redirect: '/' })
     window.location.reload()
@@ -22,24 +17,14 @@ const handleError = async () => {
 }
 </script>
 
-<i18n>
-{
-  "uk": {
-    "go_home": "На головну"
-  },
-  "en": {
-    "go_home": "Go home"
-  }
-}
-</i18n>
-
 <template>
+    <TheBackground />
     <NuxtLayout>
         <section class="error">
             <div class="description">
                 <h2>{{ error.statusCode }}</h2>
                 <p>{{ error.message }}</p>
-                <button @click="handleError">{{ t('go_home') }}</button>
+                <button @click="handleError">{{ $t('go_home') }}</button>
             </div>
         </section>
     </NuxtLayout>
@@ -80,6 +65,52 @@ const handleError = async () => {
                 box-shadow: 0 3px 4px gray;
             }
         }
+    }
+
+    @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        .description {
+            h2 {
+                font-size: 70px;
+            }
+
+            p {
+                font-size: 25px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        .description {
+            h2 {
+                font-size: 90px;
+            }
+
+            p {
+                font-size: 35px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    @media (min-width: $laptop-min) and (max-width: $laptop-max) {
+        .description {
+            h2 {
+                font-size: 110px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 50px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    }
+
+    @media (min-width: $tv-min) {
     }
 }
 </style>

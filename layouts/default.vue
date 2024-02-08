@@ -10,13 +10,11 @@ localeStore.setupLocale()
 
 <template>
     <TheHeader />
-    <div :class="{ blure: navigationStore.isVisible }">
-        <slot />
-    </div>
+    <Transition mode="out-in">
+        <div v-if="!navigationStore.isVisible">
+            <slot />
+        </div>
+    </Transition>
 </template>
 
-<style scoped lang="scss">
-.blure {
-    filter: blur(5px);
-}
-</style>
+<style scoped lang="scss"></style>
