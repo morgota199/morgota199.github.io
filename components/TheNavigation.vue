@@ -9,26 +9,28 @@ const navigationStore = useNavigationMenu()
     <nav class="navigation">
         <Transition>
             <ul class="mobile-nav" v-if="navigationStore.isVisible">
-                <li @click="navigationStore.toggle()">
-                    <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
+                <li>
+                    <NuxtLink to="about" replace>{{
+                        $t('navigation.about')
+                    }}</NuxtLink>
                 </li>
-                <li @click="navigationStore.toggle()">
-                    <NuxtLink to="services">{{
+                <li>
+                    <NuxtLink to="services" replace>{{
                         $t('navigation.services')
                     }}</NuxtLink>
                 </li>
-                <li @click="navigationStore.toggle()">
-                    <NuxtLink to="technologies">{{
+                <li>
+                    <NuxtLink to="technologies" replace>{{
                         $t('navigation.technologies')
                     }}</NuxtLink>
                 </li>
-                <li @click="navigationStore.toggle()">
-                    <NuxtLink to="portfolio">{{
+                <li>
+                    <NuxtLink to="portfolio" replace>{{
                         $t('navigation.portfolio')
                     }}</NuxtLink>
                 </li>
-                <li @click="navigationStore.toggle()">
-                    <NuxtLink to="contact">{{
+                <li>
+                    <NuxtLink to="contact" replace>{{
                         $t('navigation.contact')
                     }}</NuxtLink>
                 </li>
@@ -39,25 +41,29 @@ const navigationStore = useNavigationMenu()
 
         <ul class="desktop-nav">
             <li>
-                <NuxtLink to="about">{{ $t('navigation.about') }}</NuxtLink>
+                <NuxtLink to="about" replace>{{
+                    $t('navigation.about')
+                }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="services">{{
+                <NuxtLink to="services" replace>{{
                     $t('navigation.services')
                 }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="technologies">{{
+                <NuxtLink to="technologies" replace>{{
                     $t('navigation.technologies')
                 }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="portfolio">{{
+                <NuxtLink to="portfolio" replace>{{
                     $t('navigation.portfolio')
                 }}</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="contact">{{ $t('navigation.contact') }}</NuxtLink>
+                <NuxtLink to="contact" replace>{{
+                    $t('navigation.contact')
+                }}</NuxtLink>
             </li>
         </ul>
 
@@ -124,6 +130,7 @@ const navigationStore = useNavigationMenu()
 
     .mobile-nav {
         list-style: none;
+        z-index: 1;
 
         li {
             margin: 0 10px;

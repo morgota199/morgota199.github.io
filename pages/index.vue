@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useNavigationMenu } from '~/stores/navigation-menu'
+
+const navigationStore = useNavigationMenu()
+
+navigationStore.toggle(false)
+</script>
 
 <template>
     <section id="index">
