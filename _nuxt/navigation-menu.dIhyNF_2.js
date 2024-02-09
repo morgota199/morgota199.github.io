@@ -1,0 +1,1 @@
+import{z as s}from"./entry.f26OLdRh.js";const i=s("navigation-menu",{state(){return{show:!1}},getters:{isVisible(){return this.show}},actions:{toggle(e){typeof e<"u"?this.show=e:this.show=!this.show}}});export{i as u};
