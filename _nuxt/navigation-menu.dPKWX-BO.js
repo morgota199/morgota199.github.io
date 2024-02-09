@@ -1,1 +1,0 @@
-import{b as s}from"./entry.FWd4QyQ4.js";const i=s("navigation-menu",{state(){return{show:!1}},getters:{isVisible(){return this.show}},actions:{toggle(e){typeof e<"u"?this.show=e:this.show=!this.show}}});export{i as u};
