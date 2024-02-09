@@ -69,6 +69,7 @@ const sendTelegramMessage = async () => {
                     >{{ $t('contact.input_required_fields') }}</span
                 >
             </Transition>
+
             <Transition>
                 <span
                     v-if="successSent"
@@ -76,6 +77,7 @@ const sendTelegramMessage = async () => {
                     >{{ $t('contact.success_sent') }}</span
                 >
             </Transition>
+
             <InputEmail
                 class="email_form__item"
                 v-model="email"

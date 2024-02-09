@@ -17,7 +17,7 @@ const fieldSchema = toTypedSchema(
         .string()
         .trim()
         .nonempty(i18n.t('validation.field_required'))
-        .email({ message: i18n.t('UI.input_email.is_email') })
+        .email({ message: i18n.t('ui.input_email.is_email') })
 )
 const { value, errorMessage } = useField('email', fieldSchema)
 
