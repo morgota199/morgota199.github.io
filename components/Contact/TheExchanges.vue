@@ -5,9 +5,9 @@
     <div class="exchanges__container">
       <h2>{{ $t('contact.exchanges.title') }}</h2>
       <div class="exchanges__links">
-        <a href="https://www.upwork.com/freelancers/~0118e98179ca4eb8d2">
-          <img class="image" src="/public/images/upwork.webp"></img>
-        </a>
+<!--        <a href="https://www.upwork.com/freelancers/~0118e98179ca4eb8d2">-->
+<!--          <img class="image" src="/public/images/upwork.webp"></img>-->
+<!--        </a>-->
         <a href="https://freelancehunt.com/freelancer/vladimir_3531.html">
           <img  class="image" src="/public/images/freelancehunt.png"></img>
         </a>
