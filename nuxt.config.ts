@@ -20,6 +20,9 @@ export default defineNuxtConfig({
                 },
             },
         },
+        build: {
+            rollupOptions: {},
+        },
     },
     runtimeConfig: {
         public: {
