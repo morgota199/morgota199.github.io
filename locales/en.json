@@ -1,6 +1,20 @@
 {
     "title": "Volodymyr Lysenko",
     "go_home": "Go home",
+    "validation": {
+        "field_required": "Field is required"
+    },
+    "ui": {
+        "input_email": {
+            "label": "Email",
+            "placeholder": "en.email@example.com",
+            "is_email": "Must be a valid email"
+        },
+        "input_email_textarea": {
+            "label": "Message",
+            "placeholder": "Example your message..."
+        }
+    },
     "navigation": {
         "about": "About me",
         "services": "Services",
@@ -15,7 +29,16 @@
         "title": "About me"
     },
     "contact": {
-        "title": "Contact me"
+        "title": "Contact me",
+        "send_email": "Send email",
+        "input_required_fields": "Fill in the required fields",
+        "success_sent": "Success sent!",
+        "social_networks": {
+            "title": "You can find me here"
+        },
+        "exchanges": {
+            "title": "My profiles on freelance exchanges"
+        }
     },
     "portfolio": {
         "title": "Portfolio"

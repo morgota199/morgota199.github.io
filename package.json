@@ -21,8 +21,11 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "@vee-validate/zod": "^4.12.5",
     "flag-icons": "^7.1.0",
     "pinia": "^2.1.7",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "vee-validate": "^4.12.5",
+    "zod": "^3.22.4"
   }
 }

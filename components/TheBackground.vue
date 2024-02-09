@@ -10,10 +10,10 @@ const options = {
     fpsLimit: 120,
     interactivity: {
         events: {
-            onClick: {
-                enable: true,
-                mode: 'push',
-            },
+            // onClick: {
+            //     enable: true,
+            //     mode: 'push',
+            // },
             onHover: {
                 enable: true,
                 mode: 'repulse',
@@ -26,9 +26,9 @@ const options = {
                 opacity: 0.8,
                 size: 40,
             },
-            push: {
-                quantity: 6,
-            },
+            // push: {
+            //     quantity: 6,
+            // },
             repulse: {
                 distance: 100,
                 duration: 0.4,

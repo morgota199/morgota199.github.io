@@ -1,6 +1,20 @@
 {
     "title": "Володимир Лисенко",
     "go_home": "На головну",
+    "validation": {
+        "field_required": "Обов'язкове поле"
+    },
+    "ui": {
+        "input_email": {
+            "label": "Електронна пошта",
+            "placeholder": "ua.email@example.com",
+            "is_email": "Не валідна пошта"
+        },
+        "input_email_textarea": {
+            "label": "Повідомлення",
+            "placeholder": "Приклад вашого повідомлення..."
+        }
+    },
     "navigation": {
         "about": "Про мене",
         "services": "Послуги",
@@ -15,7 +29,16 @@
         "title": "Про мене"
     },
     "contact": {
-        "title": "Зв'язок"
+        "title": "Зв'язок",
+        "send_email": "Надіслати",
+        "input_required_fields": "Заповніть обовʼязкові поля",
+        "success_sent": "Відправлено!",
+        "social_networks": {
+            "title": "Мене можна знайти тут"
+        },
+        "exchanges": {
+            "title": "Мої профілі на фріланс біржах"
+        }
     },
     "portfolio": {
         "title": "Портфоліо"

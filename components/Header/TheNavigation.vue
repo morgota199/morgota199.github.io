@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BurgerIcon from '~/assets/icons/burger.svg'
+import TheLanguageSelector from '~/components/Header/TheLanguageSelector.vue'
 import { useNavigationMenu } from '~/stores/navigation-menu'
 
 const navigationStore = useNavigationMenu()

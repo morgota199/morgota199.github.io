@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TheHeader from '~/components/Header/TheHeader.vue'
 import { useLocaleStore } from '~/stores/locale'
 import { useNavigationMenu } from '~/stores/navigation-menu'
 

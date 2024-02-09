@@ -15,9 +15,16 @@ export default defineNuxtConfig({
             preprocessorOptions: {
                 scss: {
                     additionalData:
-                        '@use "~/assets/scss/breakpoints.scss" as *;',
+                        '@use "~/assets/scss/breakpoints.scss" as *;' +
+                        '@use "~/assets/scss/colors.scss" as *;',
                 },
             },
+        },
+    },
+    runtimeConfig: {
+        public: {
+            telegramBotToken: '6695201540:AAHHhCGL6OxDYOF8PhsfJ0lSkJSlTElNL_s',
+            telegramChatId: 519564331,
         },
     },
 })

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TheBackground from '~/components/TheBackground.vue'
 import { useLoaderStore } from '~/stores/loader'
 
 const nuxtApp = useNuxtApp()

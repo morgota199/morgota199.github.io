@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheNavigation from '~/components/Header/TheNavigation.vue'
+import TheLanguageSelector from '~/components/Header/TheLanguageSelector.vue'
+</script>
 
 <template>
     <header class="header">
