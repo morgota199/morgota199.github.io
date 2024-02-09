@@ -1,0 +1,1 @@
+import{u as o}from"./navigation-menu.CaDCHM9-.js";import{d as t,c as n,a,t as s,o as i}from"./entry.oLSVHetw.js";const c={id:"technologies"},m=t({__name:"technologies",setup(r){return o().toggle(!1),(e,g)=>(i(),n("section",c,[a("h1",null,s(e.$t("technologies.title")),1)]))}});export{m as default};

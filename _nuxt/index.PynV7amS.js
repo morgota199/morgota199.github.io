@@ -1,1 +1,0 @@
-import{u as t}from"./navigation-menu.dERdsR_D.js";import{d as o,c as n,a,t as i,o as s}from"./entry.yzyZga_h.js";const r={id:"index"},m=o({__name:"index",setup(c){return t().toggle(!1),(e,d)=>(s(),n("section",r,[a("h1",null,i(e.$t("index.title")),1)]))}});export{m as default};
