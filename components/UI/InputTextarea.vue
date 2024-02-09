@@ -33,7 +33,7 @@ watch(
 <template>
     <div class="input_email_textarea">
         <label for="email_textarea">{{
-            $t('UI.input_email_textarea.label')
+            $t('ui.input_email_textarea.label')
         }}</label>
         <textarea
             name="email_textarea"
