@@ -1,1 +1,0 @@
-import{u as t}from"./navigation-menu.GQkg3PVY.js";import{d as e,c as a,a as n,t as i,o as s}from"./entry.4xNYhByN.js";const r={id:"portfolio"},m=e({__name:"portfolio",setup(l){return t().toggle(!1),(o,p)=>(s(),a("section",r,[n("h1",null,i(o.$t("portfolio.title")),1)]))}});export{m as default};
