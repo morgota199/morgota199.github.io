@@ -6,20 +6,20 @@
       <div class="exchanges__container">
         <h2>{{ $t('contact.social_networks.title') }}</h2>
         <div class="exchanges__links">
-<!--            <a href="https://t.me/vladimir_lisenko">-->
-<!--              <img class="image" src="/public/images/Telegram.webp"></img>-->
-<!--            </a>-->
-<!--            <a href="https://facebook.com/profile.php?id=100017348404042">-->
-<!--              <img  class="image" src="/public/images/Facebook.webp"></img>-->
-<!--            </a>-->
-<!--          <a href="https://instagram.com/vladimir._lisenko">-->
-<!--            <img  class="image" src="/public/images/Instagram.webp"></img>-->
-<!--          </a>-->
-<!--          <a href="https://linkedin.com/in/vladimir-lisenko-804904202">-->
-<!--            <img  class="image" src="/public/images/LinkedIn.webp"></img>-->
-<!--          </a>-->
+            <a href="https://t.me/vladimir_lisenko">
+              <img class="image" src="~/assets/images/Telegram.webp"></img>
+            </a>
+            <a href="https://facebook.com/profile.php?id=100017348404042">
+              <img  class="image" src="~/assets/images/Facebook.webp"></img>
+            </a>
+          <a href="https://instagram.com/vladimir._lisenko">
+            <img  class="image" src="~/assets/images/Instagram.webp"></img>
+          </a>
+          <a href="https://linkedin.com/in/vladimir-lisenko-804904202">
+            <img  class="image" src="~/assets/images/LinkedIn.webp"></img>
+          </a>
           <a href="https://github.com/morgota199">
-            <img  class="image" src="/public/images/github.png"></img>
+            <img  class="image" src="~/assets/images/github.png"></img>
           </a>
         </div>
       </div>
