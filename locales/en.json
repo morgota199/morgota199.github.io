@@ -7,7 +7,7 @@
     "ui": {
         "input_email": {
             "label": "Email",
-            "placeholder": "en.email@example.com",
+            "placeholder": "Email",
             "is_email": "Must be a valid email"
         },
         "input_email_textarea": {
